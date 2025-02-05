@@ -1,0 +1,23 @@
+.featured-div{
+    width: 90%;
+    margin-left: 5vh;
+}
+
+
+.featured-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,38 @@
+.item {
+    width: 200px; /* Set a fixed height for the container */
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 1s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.item-image {
+    width: 100%; /* Full width for the image */
+    object-fit: cover; /* Ensure the image fits well */
+    border-radius: 15px 15px 0 0;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.item-img-container p {
+    margin-left: 10px ;
+}
+
+@media(max-width: 750px) {
+    .featured-items {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .item {
+        flex: 0 0 auto; /* Prevent items from shrinking */
+    }
+}

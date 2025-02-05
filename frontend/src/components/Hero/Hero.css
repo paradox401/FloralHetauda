@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 82vh;
     position: relative;
     overflow: hidden;
 }
@@ -68,7 +68,7 @@
     position: absolute;
     width: 1000px;
     height: 264px;
-    top: 70px;
+    top: 10px;
 
     font-family: 'Recoleta';
     font-style: normal;
@@ -101,9 +101,11 @@
         width: 80%;
         height: auto;
     }
-    .hero-img {
-        width: 150px;
+    .hero-img img {
+        width: 600px;
+        height: 500px;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -112,7 +114,5 @@
         width: 90%;
         height: auto;
     }
-    .hero-img {
-        width: 100px;
-    }
+
 }
