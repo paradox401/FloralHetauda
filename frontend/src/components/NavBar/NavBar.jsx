@@ -6,7 +6,7 @@ function NavBar(props){
     const [login, setLogin] = useState(false)
     return(
         <nav>
-            <img src="" alt="Floral Hetauda" />
+         <a href="#">  <img src="" alt="Floral Hetauda" /></a> 
             
             <ul>
                 <li>
@@ -21,7 +21,7 @@ function NavBar(props){
             </ul>
             <div className="nav-icons">
             <button id="cart"><i class='bx bx-cart'></i></button>
-            <button id = "login" > {login ? <i class='bx bx-user'></i> : "login" }</button>
+            <button id = "login" > {login ? <i class='bx bx-user'></i> : "Login" }</button>
             </div>
             
         </nav>

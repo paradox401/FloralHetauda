@@ -32,7 +32,7 @@ nav{
 ul{
     display: flex;
     list-style: none;
-  flex-grow: 0.2;
+  flex-grow: 0.15;
   justify-content: space-between;
     
 }
@@ -44,16 +44,49 @@ ul li a{
     text-decoration: none;
     color: var(--text1);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bolder;
     transition: all 0.3s ease;
-
-    
+    border-bottom: 4px solid transparent; 
+    padding: 0px 10px;   
 }
 ul li a:hover{
-    color: #f1c40f;
+    color: var(--primary3);
+    border-bottom: 3px solid var(--primary3);
+    transition: all 0.3s ease;
 }
 #cart,#login{
     cursor: pointer;
     background-color: transparent;
     border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+
+}
+#cart{
+    font-size:1.8rem ;
+}
+#login{
+    font-size:0.8rem ;
+    border: 2px solid var(--primary3);
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: var(--primary3);
+    color: white
+}
+#cart:hover{
+    color: var(--primary3);
+        scale: 1.1;
+    transition: all 0.3s ease;
+
+}
+#login:hover{
+    color: var(--primary3);
+    transition: all 0.3s ease;
+
+}
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0.03;
 }
