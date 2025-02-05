@@ -59,6 +59,7 @@
     /* Main/secondary2 */
     background: #FBCEB1;
     border-radius: 219.5px;
+    z-index: 0;
 }
 
 .hero-text {
@@ -78,6 +79,19 @@
     text-align: center;
 
     color: #200C30;
+    z-index: 1;
+}
+
+.hero-img {
+
+    z-index: 2;
+}
+
+.hero-img img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    margin-top: 290px;
 }
 
 /* Mobile responsiveness */
@@ -87,6 +101,9 @@
         width: 80%;
         height: auto;
     }
+    .hero-img {
+        width: 150px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -94,5 +111,8 @@
         font-size: 30px;
         width: 90%;
         height: auto;
+    }
+    .hero-img {
+        width: 100px;
     }
 }
