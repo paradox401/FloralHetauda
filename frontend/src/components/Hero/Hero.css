@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --font-primary: "Itim", sans-serif;
+    --font-secondary: "Recoleta", serif;
+
+    /* Heading Styles */
+    --h1-size: 40px;
+    --h1-line-height: 120%;
+
+    --h2-size: 35px;
+    --h2-line-height: 130%;
+
+    --h3-size: 30px;
+    --h3-line-height: 140%;
+
+    --h4-size: 25px;
+    --h4-line-height: 140%;
+
+    /* Body Text Styles */
+    --body-xl-size: 18px;
+    --body-xl-line-height: 150%;
+
+    --body-lg-size: 16px;
+    --body-lg-line-height: 170%;
+
+    --body-md-size: 14px;
+    --body-md-line-height: 180%;
+
+    --body-sm-size: 12px;
+    --body-sm-line-height: 180%;
+}
+
+/* Rectangle 1 */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-rectangle {
+    margin-top: 100px;
+    position: absolute;
+    width: 439px;
+    height: 700px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+    /* Main/secondary2 */
+    background: #FBCEB1;
+    border-radius: 219.5px;
+}
+
+.hero-text {
+    /* Bouquet of golden hour blooms */
+
+    position: absolute;
+    width: 1000px;
+    height: 264px;
+    top: 70px;
+
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 70px;
+    line-height: 150%;
+    /* or 132px */
+    text-align: center;
+
+    color: #200C30;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 50px;
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 30px;
+        width: 90%;
+        height: auto;
+    }
+}
