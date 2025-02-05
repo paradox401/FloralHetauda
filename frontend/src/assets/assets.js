@@ -4,7 +4,12 @@ import flower3 from './flower3.png'
 import flower4 from './flower4.png'
 import flower5 from './flower5.png'
 
-const assets = {
+import logo from './logo.png'
+
+
+export const assets = {
+    logo,
+
     flower1,
     flower2,
     flower3,
