@@ -10,10 +10,10 @@ function NavBar(props){
             
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#">ABOUT US</a>
                 </li>
                 <li>
                     <a href="#">FAQ</a>
