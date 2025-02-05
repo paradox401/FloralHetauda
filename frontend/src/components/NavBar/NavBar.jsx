@@ -18,7 +18,7 @@ function NavBar(props){
                     <a href="#">FAQ</a>
                 </li>
             </ul>
-            <div className="nav-icons">
+            <div className="nav-icons"> 
             <button id="cart"><i class='bx bx-cart'></i></button>
             <button id = "login" > {login ? <i class='bx bx-user'></i> : "login" }</button>
             </div>
