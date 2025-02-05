@@ -3,19 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    /* Main Colors */
+    --primary1: #FF7F50;
+    --primary2: #FF9A76;
+    --primary3: #EC1414;
+    --secondary1: #FFB076;
+    --secondary2: #FBCEB1;
+  
+    /* Background Colors */
+    --bg-ivory1: #FFFFF0;
+    --bg-white: #EDEDEB;
+  
+    /* Text Colors */
+    --text1: #4B4B43;  /* Dark Text */
+    --text2: #82827C; /* Light Text */
+  }
+  
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    background-color: transparent;
+    padding: 50px 30px;
+    flex-shrink: 5;
 }
 ul{
     display: flex;
     list-style: none;
-    margin-left: 20vw;
+  flex-grow: 0.2;
+  justify-content: space-between;
+    
 }
 ul li{
     margin-right: 20px;
@@ -23,7 +42,11 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--text1);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
     
 }
 ul li a:hover{
@@ -31,4 +54,6 @@ ul li a:hover{
 }
 #cart,#login{
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
