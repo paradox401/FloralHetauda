@@ -1,12 +1,13 @@
 import React from "react";
 import './Hero.css'
-import flowerImage from "./flowerImage.png"; 
+
+import {assets}  from "../../assets/assets"
 
 function Hero() {
     return (
         <div className="hero">
             <div className="hero-img">
-                <img src={flowerImage} alt="flowers" />
+                <img src={assets.flowerImage} alt="flowers" />
             </div>
             <div className="hero-rectangle"></div>
             <div className="hero-text">

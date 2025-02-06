@@ -94,6 +94,37 @@
     margin-top: 290px;
 }
 
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-img {
+    animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.hero-text {
+    animation: slideInFromRight 1.4s ease-out forwards;
+}
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .hero-text {

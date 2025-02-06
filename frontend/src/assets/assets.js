@@ -5,10 +5,13 @@ import flower4 from './flower4.png'
 import flower5 from './flower5.png'
 
 import logo from './logo.png'
+import flowerImage from './flowerImage.png'
 
 
 export const assets = {
     logo,
+
+    flowerImage,
 
     flower1,
     flower2,
