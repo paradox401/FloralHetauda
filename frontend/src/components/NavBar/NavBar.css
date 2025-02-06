@@ -129,3 +129,9 @@ ul li a:hover::after {
     }
 
 }
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: none;
+    }
+}
