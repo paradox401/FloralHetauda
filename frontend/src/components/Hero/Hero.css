@@ -101,6 +101,7 @@
         width: 80%;
         height: auto;
     }
+ 
     .hero-img img {
         width: 600px;
         height: 500px;
@@ -110,9 +111,15 @@
 
 @media (max-width: 480px) {
     .hero-text {
-        font-size: 30px;
+        font-size: 40px;
         width: 90%;
+        height: auto;
+    }
+    .hero-img img {
+        width: 100%;
         height: auto;
     }
 
 }
+
+

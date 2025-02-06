@@ -94,6 +94,7 @@ ul li a:hover::after {
 }
 #cart{
     font-size:1.8rem ;
+    margin-right: 10px;
 }
 #login{
     font-size:0.8rem ;
