@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import FeaturedItems from './components/FeaturedItems/FeaturedItems'
 import OurFeatures from './components/OurFeatures/OurFeatures'
 import FinestSelection from './components/FinestSelection/FinestSelection'
+import Footer from './components/Footer/Footer'
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
       <FeaturedItems/>
       <OurFeatures/>
       <FinestSelection/>
+      <Footer/>
     </>
   )
 }

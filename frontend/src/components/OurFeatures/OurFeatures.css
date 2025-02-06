@@ -95,7 +95,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
     .feature {
-        flex: 0.5 1 20%;
+        flex: 0.5 1 30%;
     }
 }
 @media (max-width: 480px) {
