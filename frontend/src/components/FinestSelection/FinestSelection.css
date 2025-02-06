@@ -1,0 +1,27 @@
+.finest-selection{
+    width: 90%;
+    margin-left: 5vh;
+    
+}
+
+
+.finest-selection-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+.finest-selection-items img {
+
+    border-radius: 50%;
+}
+
+
+@media (max-width: 480px) {
+    .finest-selection{
+        width: 90%;
+        margin-left: 2vh;
+    }
+}
