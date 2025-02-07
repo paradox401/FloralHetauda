@@ -70,7 +70,7 @@
     height: 264px;
     top: 10px;
 
-    font-family: 'Recoleta';
+    font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 100;
     font-size: 70px;
