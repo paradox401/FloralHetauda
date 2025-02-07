@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.offers-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto; 
+    padding: 40px;
+
+}
+
+.offer-card {
+    position: relative;
+    width: 280px;
+    height: 200px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px 20px 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.offer-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.offer-discount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.offer-image {
+    position: absolute;
+    top: 10px;
+    left: 80%;
+    transform: translateX(-50%) scale(1);
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 1s infinite alternate;
+}
+
+.offer-card:hover .offer-image {
+    transform: translateX(-50%) scale(1.1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateX(-50%) translateY(0);
+    }
+    to {
+        transform: translateX(-50%) translateY(10px);
+    }
+}

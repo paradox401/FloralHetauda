@@ -4,6 +4,10 @@ import flower3 from './flower3.png'
 import flower4 from './flower4.png'
 import flower5 from './flower5.png'
 
+import offerflower1 from './offerflower1.png'
+import offerflower2 from './offerflower2.png'
+import offerflower3 from './offerflower3.png'
+
 import logo from './logo.png'
 import flowerImage from './flowerImage.png'
 
@@ -27,4 +31,10 @@ export const flowers = [
     { name: "Rose Collection", image: assets.flower4, price: "1299"},
     { name: "Paper Rose Bouquet", image : assets.flower5, price: "1799"}
 ];
+
+export const offers = [
+    { title: "Exciting Offer!", discount: "25%", image: offerflower1 },
+    { title: "Limited Deal!", discount: "30%", image: offerflower2 },
+    { title: "Special Discount!", discount: "20%", image: offerflower3 },
+  ];
 
