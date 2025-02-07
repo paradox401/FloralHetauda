@@ -6,3 +6,10 @@
     width: 90%;
     margin-left: 5vh;
 }
+
+@media (max-width: 480px) {
+    .offer-card-display{
+        width: 90%;
+        margin-left: 2vh;
+    }
+}

@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .offers-container {
+    margin-top: 20px;
     display: flex;
     gap: 30px;
     overflow-x: auto; 
-    padding: 40px;
-
 }
 
 .offer-card {
@@ -41,7 +40,7 @@
 .offer-discount {
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
+    color: #e91111;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-out forwards;
@@ -52,8 +51,8 @@
     top: 10px;
     left: 80%;
     transform: translateX(-50%) scale(1);
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     transition: transform 0.3s ease-in-out;
     animation: bounce 1s infinite alternate;
 }
