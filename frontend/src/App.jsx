@@ -7,6 +7,7 @@ import OurFeatures from './components/OurFeatures/OurFeatures'
 import FinestSelection from './components/FinestSelection/FinestSelection'
 import Footer from './components/Footer/Footer'
 import OfferCardDisplay from './components/OfferCardDisplay/OfferCardDisplay'
+import Reviews from './components/Review/Reviews'
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
       <FeaturedItems/>
       <OurFeatures/>
       <FinestSelection/>
+      <Reviews/>
       <Footer/>
     </>
   )
