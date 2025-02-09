@@ -33,19 +33,35 @@ a p{
     font-size: 40px;
     font-family: var(--font-secondary);
 }
-nav{
+.navbar {
+    position: fixed; /* Fixes the nav at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures full-width */
+    z-index: 1000; /* Keeps it above other elements */
+    background-color: #fffff0ec;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    padding: 20px 17px 50px 17px;
-    flex-shrink: 5;
-}
-img{
-    height: 100px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-ul{
+/* Add padding to the body so the content doesn't get hidden under the fixed nav */
+
+
+img{
+    height: 80px;
+}
+
+#logotext{
+   font-family:sans-serif;
+   font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary2);
+  
+}
+.navbar ul{
     display: flex;
     list-style: none;
   flex-grow: 0.15;
@@ -53,34 +69,34 @@ ul{
     
     
 }
-ul li{
+ .navbar ul li{
     margin-right: 20px;
     
 }
-ul li a {
+.navbar ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bolder;
     position: relative; /* Required for ::after to position properly */
    padding: 0px 10px;
     transition: color 0.3s ease;
-    font-family: var(--font-secondary);
+    font-family:sans-serif;
     
 }
 
-ul li a::after {
+.navbar ul li a::after {
     content: ""; /* Creates the underline effect */
     position: absolute;
     bottom: -2px; /* Adjust distance from the text */
     left: 0;
     width: 0%; /* Initially hidden */
     height: 3px; /* Thickness of the underline */
-    background-color: var(--primary3);
+    background-color: var(--primary2);
     transition: width 0.3s ease; /* Animation for underline */
 }
 
-ul li a:hover::after {
+.navbar ul li a:hover::after {
     width: 100%; /* Expands underline on hover */
 }
 
@@ -98,14 +114,14 @@ ul li a:hover::after {
 }
 #login{
     font-size:0.8rem ;
-    border: 2px solid var(--primary3);
+    border: 2px solid var(--primary2);
     padding: 5px 8px;
     border-radius: 5px;
-    background-color: var(--primary3);
+    background-color: var(--primary2);
     color: white
 }
 #cart:hover{
-    color: var(--primary3);
+    color: var(--primary2);
         scale: 1.1;
     transition: all 0.3s ease;
 
@@ -129,6 +145,7 @@ ul li a:hover::after {
     }
 
 }
+
 
 @media (max-width: 480px) {
     nav ul li {

@@ -11,7 +11,7 @@ function Hero() {
             </div>
             <div className="hero-rectangle"></div>
             <div className="hero-text">
-                <h1>Boquet Of Golden Hour Blooms</h1>
+                <h1>From Our Garden To Your Heart </h1>
             </div>
 
         </div>

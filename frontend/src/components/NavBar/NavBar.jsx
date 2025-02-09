@@ -6,8 +6,8 @@ import { assets } from "../../assets/assets";
 function NavBar(props){
     const [login, setLogin] = useState(false)
     return(
-        <nav>
-         <a href="#">  <img src= {assets.logo} alt="Floral Hetauda" /><p>Floral Hetauda</p></a> 
+        <nav className="navbar">
+         <a href="#">  <img src= {assets.logo} alt="Floral Hetauda" /><p id="logotext">FloralHetauda</p></a> 
             <ul>
                 <li>
                     <a href="#">HOME</a>
