@@ -141,14 +141,19 @@ img{
 }
 
 @media (max-width: 768px) {
-    a p{
-        display: none;
+    .navbar img {
+        height: 80px;
+        width: 160px;
     }
 
 }
 
 
 @media (max-width: 480px) {
+    .navbar img {
+        height: 60px;
+        width: 120px;
+    }
     nav ul li {
         display: none;
     }
