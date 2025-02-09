@@ -7,7 +7,7 @@ function NavBar(props){
     const [login, setLogin] = useState(false)
     return(
         <nav>
-         <a href="#">  <img src= {assets.logo} alt="Floral Hetauda" /><p>Floral Hetauda</p></a> 
+         <a href="#">  <img src= {assets.logo} alt="Floral Hetauda" /></a> 
             <ul>
                 <li>
                     <a href="#">HOME</a>
