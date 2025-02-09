@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     /* Main Colors */
     --primary1: #FF7F50;
@@ -10,151 +11,189 @@
     --primary3: #EC1414;
     --secondary1: #FFB076;
     --secondary2: #FBCEB1;
-  
+
     /* Background Colors */
     --bg-ivory1: #FFFFF0;
     --bg-white: #EDEDEB;
-  
+
     /* Text Colors */
     --text1: #4B4B43;  /* Dark Text */
     --text2: #82827C; /* Light Text */
-    /*fonts*/
-    --font-secondary: "Recoleta"; /*smaller font*/
-    --font-primary: "Itim", sans-serif;
-  }
 
-a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    /* Fonts */
+    --font-secondary: "Recoleta"; /* Smaller Font */
+    --font-primary: "Itim", sans-serif;
 }
-a p{
-    color: #FBCEB1;
-    font-size: 40px;
-    font-family: var(--font-secondary);
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-ivory1);
 }
+
+/* Navbar Styling */
 .navbar {
-    position: fixed; /* Fixes the nav at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Ensures full-width */
-    z-index: 1000; /* Keeps it above other elements */
-    background-color: #fffff0ec;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 240, 0.9);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Add padding to the body so the content doesn't get hidden under the fixed nav */
-
-
-img{
+/* Logo */
+.navbar img {
     height: 100px;
     width: 200px;
 }
 
-#logotext{
-   font-family:sans-serif;
-   font-weight: bold;
-    font-size: 1.5rem;
-    color: var(--primary2);
-  
-}
-.navbar ul{
+/* Navigation Links */
+.navbar ul {
     display: flex;
     list-style: none;
-  flex-grow: 0.15;
-  justify-content: space-between;
-    
-    
-}
- .navbar ul li{
-    margin-right: 20px;
-    
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    position: relative; /* Required for ::after to position properly */
-   padding: 0px 10px;
-    transition: color 0.3s ease;
-    font-family:sans-serif;
-    
+    gap: 20px;
 }
 
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--text1);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Underline Effect */
 .navbar ul li a::after {
-    content: ""; /* Creates the underline effect */
+    content: "";
     position: absolute;
-    bottom: -2px; /* Adjust distance from the text */
+    bottom: -5px;
     left: 0;
-    width: 0%; /* Initially hidden */
-    height: 3px; /* Thickness of the underline */
+    width: 0%;
+    height: 3px;
     background-color: var(--primary2);
-    transition: width 0.3s ease; /* Animation for underline */
+    transition: width 0.3s ease;
 }
 
 .navbar ul li a:hover::after {
-    width: 100%; /* Expands underline on hover */
+    width: 100%;
 }
 
-#cart,#login{
+/* Cart & Login Buttons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#cart, #login {
     cursor: pointer;
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    font-weight: bolder;
+    font-weight: bold;
+}
 
+#cart {
+    font-size: 1.8rem;
 }
-#cart{
-    font-size:1.8rem ;
-    margin-right: 10px;
-}
-#login{
-    font-size:0.8rem ;
+
+#login {
+    font-size: 0.8rem;
     border: 2px solid var(--primary2);
     padding: 5px 8px;
     border-radius: 5px;
     background-color: var(--primary2);
-    color: white
+    color: white;
 }
-#cart:hover{
+
+/* Hover Effects */
+#cart:hover {
     color: var(--primary2);
-        scale: 1.1;
+    transform: scale(1.1);
     transition: all 0.3s ease;
-
 }
-#login:hover{
-    color:black;
+
+#login:hover {
+    color: black;
+    background-color: var(--bg-ivory1);
     transition: all 0.3s ease;
-    background-color:var(--bg-ivory1)
-
-}
-.nav-icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 0.03;
 }
 
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.mobile-nav-icons{
+    display: none;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
     .navbar img {
         height: 80px;
         width: 160px;
     }
 
-}
-
-
-@media (max-width: 480px) {
-    .navbar img {
-        height: 60px;
-        width: 120px;
-    }
-    nav ul li {
+    .nav-icons{
         display: none;
+    }
+
+    /* Hide desktop menu */
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-ivory1);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    /* Show when active */
+    .navbar ul.active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Show Hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Mobile Nav Icons Inside Dropdown */
+    .mobile-nav-icons {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-nav-icons button {
+        display: block;
     }
 }
