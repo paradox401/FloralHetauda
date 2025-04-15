@@ -8,19 +8,34 @@ import FinestSelection from './components/FinestSelection/FinestSelection'
 import Footer from './components/Footer/Footer'
 import OfferCardDisplay from './components/OfferCardDisplay/OfferCardDisplay'
 import Reviews from './components/Review/Reviews'
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 
+function HomePage() {
   return (
     <>
-      <NavBar />
       <Hero />
       <OfferCardDisplay />
-      <FeaturedItems/>
-      <OurFeatures/>
-      <FinestSelection/>
-      <Reviews/>
-      <Footer/>
+      <FeaturedItems />
+      <OurFeatures />
+      <FinestSelection />
+      <Reviews />
+      <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
+    </Router>
   )
 }
 
