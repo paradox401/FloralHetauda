@@ -10,11 +10,11 @@ import offerflower3 from './offerflower3.png'
 
 import logo from './logo.png'
 import flowerImage from './flowerImage.png'
-
+import esewaLogo from './Esewa_logo.jpeg'
 
 export const assets = {
     logo,
-
+    esewaLogo,
     flowerImage,
 
     flower1,

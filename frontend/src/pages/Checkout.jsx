@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Checkout.css'
+import { assets } from '../assets/assets'
 
 function Checkout() {
   const [popup, setPopup] = useState(false)
@@ -10,7 +11,7 @@ function Checkout() {
 
   return (
     <div className="checkout-page">
-      <h2>eFloral Pay</h2>
+      <img src={assets.esewaLogo} alt="esewa" className="esewa-logo" />
       <div className="checkout-box">
         <p>Amount: Rs. 4197</p>
         <p>Merchant: Floral Hetauda</p>
